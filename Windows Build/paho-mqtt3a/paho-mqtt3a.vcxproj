@@ -54,11 +54,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;PAHOMQTT3A_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\National Instruments\LabVIEW 2013\cintools</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ws2_32.lib;labviewv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\National Instruments\LabVIEW 2013\cintools</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -71,13 +73,15 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;PAHOMQTT3A_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\National Instruments\LabVIEW 2013\cintools</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ws2_32.lib;labviewv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\National Instruments\LabVIEW 2013\cintools</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -85,6 +89,7 @@
     <ClCompile Include="..\..\src\Heap.c" />
     <ClCompile Include="..\..\src\LinkedList.c" />
     <ClCompile Include="..\..\src\Log.c" />
+    <ClCompile Include="..\..\src\LVMQTT.c" />
     <ClCompile Include="..\..\src\Messages.c" />
     <ClCompile Include="..\..\src\MQTTAsync.c" />
     <ClCompile Include="..\..\src\MQTTPacket.c" />
@@ -107,6 +112,7 @@
     <ClInclude Include="..\..\src\Heap.h" />
     <ClInclude Include="..\..\src\LinkedList.h" />
     <ClInclude Include="..\..\src\Log.h" />
+    <ClInclude Include="..\..\src\LVMQTT.h" />
     <ClInclude Include="..\..\src\Messages.h" />
     <ClInclude Include="..\..\src\MQTTAsync.h" />
     <ClInclude Include="..\..\src\MQTTClient.h" />
