@@ -1,0 +1,24 @@
+#
+#Fri Jul 03 19:13:25 CDT 2015
+Debug906x/src/LVMQTT.o=1
+Debug906x/src/Tree.o=1
+Debug906x/liblvmqtt.so=1
+Debug906x/src/MQTTProtocolClient.o=1
+Debug906x/src/Log.o=1
+Debug906x/src/MQTTAsync.o=1
+Debug906x/src/MQTTPersistence.o=1
+Debug906x/src/MQTTProtocolOut.o=1
+Debug906x/src/Thread.o=1
+Debug906x/src/MQTTVersion.o=1
+Debug906x/src/MQTTPacketOut.o=1
+Debug906x/src/StackTrace.o=1
+Debug906x/src/Clients.o=1
+Debug906x/src/MQTTPacket.o=1
+Debug906x/src/MQTTPersistenceDefault.o=1
+Debug906x/src/SSLSocket.o=1
+Debug906x/src/LinkedList.o=1
+Debug906x/src/utf-8.o=1
+Debug906x/src/SocketBuffer.o=1
+Debug906x/src/Messages.o=1
+Debug906x/src/Socket.o=1
+Debug906x/src/Heap.o=1

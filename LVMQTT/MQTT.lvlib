@@ -10,6 +10,7 @@
 	<Item Name="destroy.vi" Type="VI" URL="../destroy.vi"/>
 	<Item Name="events.ctl" Type="VI" URL="../events.ctl"/>
 	<Item Name="msgAck.ctl" Type="VI" URL="../msgAck.ctl"/>
+	<Item Name="path.vi" Type="VI" URL="../path.vi"/>
 	<Item Name="publish.vi" Type="VI" URL="../publish.vi"/>
 	<Item Name="QoS.ctl" Type="VI" URL="../QoS.ctl"/>
 	<Item Name="statusMsg.ctl" Type="VI" URL="../statusMsg.ctl"/>

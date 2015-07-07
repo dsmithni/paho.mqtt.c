@@ -1,0 +1,234 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/Clients.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/Heap.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/LVMQTT.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/LinkedList.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/Log.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/MQTTAsync.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/MQTTClient.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/MQTTPacket.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/MQTTPacketOut.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/MQTTPersistence.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/MQTTPersistenceDefault.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/MQTTProtocolClient.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/MQTTProtocolOut.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/MQTTVersion.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/Messages.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/SSLSocket.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/Socket.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/SocketBuffer.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/StackTrace.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/Thread.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/Tree.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/utf-8.c 
+
+OBJS += \
+./src/Clients.o \
+./src/Heap.o \
+./src/LVMQTT.o \
+./src/LinkedList.o \
+./src/Log.o \
+./src/MQTTAsync.o \
+./src/MQTTClient.o \
+./src/MQTTPacket.o \
+./src/MQTTPacketOut.o \
+./src/MQTTPersistence.o \
+./src/MQTTPersistenceDefault.o \
+./src/MQTTProtocolClient.o \
+./src/MQTTProtocolOut.o \
+./src/MQTTVersion.o \
+./src/Messages.o \
+./src/SSLSocket.o \
+./src/Socket.o \
+./src/SocketBuffer.o \
+./src/StackTrace.o \
+./src/Thread.o \
+./src/Tree.o \
+./src/utf-8.o 
+
+C_DEPS += \
+./src/Clients.d \
+./src/Heap.d \
+./src/LVMQTT.d \
+./src/LinkedList.d \
+./src/Log.d \
+./src/MQTTAsync.d \
+./src/MQTTClient.d \
+./src/MQTTPacket.d \
+./src/MQTTPacketOut.d \
+./src/MQTTPersistence.d \
+./src/MQTTPersistenceDefault.d \
+./src/MQTTProtocolClient.d \
+./src/MQTTProtocolOut.d \
+./src/MQTTVersion.d \
+./src/Messages.d \
+./src/SSLSocket.d \
+./src/Socket.d \
+./src/SocketBuffer.d \
+./src/StackTrace.d \
+./src/Thread.d \
+./src/Tree.d \
+./src/utf-8.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+src/Clients.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/Clients.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/Heap.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/Heap.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/LVMQTT.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/LVMQTT.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/LinkedList.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/LinkedList.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/Log.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/Log.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/MQTTAsync.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/MQTTAsync.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/MQTTClient.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/MQTTClient.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/MQTTPacket.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/MQTTPacket.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/MQTTPacketOut.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/MQTTPacketOut.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/MQTTPersistence.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/MQTTPersistence.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/MQTTPersistenceDefault.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/MQTTPersistenceDefault.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/MQTTProtocolClient.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/MQTTProtocolClient.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/MQTTProtocolOut.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/MQTTProtocolOut.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/MQTTVersion.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/MQTTVersion.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/Messages.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/Messages.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/SSLSocket.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/SSLSocket.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/Socket.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/Socket.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/SocketBuffer.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/SocketBuffer.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/StackTrace.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/StackTrace.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/Thread.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/Thread.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/Tree.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/Tree.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/utf-8.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/utf-8.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

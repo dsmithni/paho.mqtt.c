@@ -1,0 +1,114 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/samples/MQTTAsync_publish.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/samples/MQTTAsync_subscribe.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/samples/pahopub.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/samples/pubasync.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/samples/pubsync.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/samples/stdinpub.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/samples/stdinpuba.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/samples/stdoutsub.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/samples/stdoutsuba.c \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/samples/subasync.c 
+
+OBJS += \
+./src/samples/MQTTAsync_publish.o \
+./src/samples/MQTTAsync_subscribe.o \
+./src/samples/pahopub.o \
+./src/samples/pubasync.o \
+./src/samples/pubsync.o \
+./src/samples/stdinpub.o \
+./src/samples/stdinpuba.o \
+./src/samples/stdoutsub.o \
+./src/samples/stdoutsuba.o \
+./src/samples/subasync.o 
+
+C_DEPS += \
+./src/samples/MQTTAsync_publish.d \
+./src/samples/MQTTAsync_subscribe.d \
+./src/samples/pahopub.d \
+./src/samples/pubasync.d \
+./src/samples/pubsync.d \
+./src/samples/stdinpub.d \
+./src/samples/stdinpuba.d \
+./src/samples/stdoutsub.d \
+./src/samples/stdoutsuba.d \
+./src/samples/subasync.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+src/samples/MQTTAsync_publish.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/samples/MQTTAsync_publish.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/samples/MQTTAsync_subscribe.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/samples/MQTTAsync_subscribe.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/samples/pahopub.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/samples/pahopub.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/samples/pubasync.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/samples/pubasync.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/samples/pubsync.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/samples/pubsync.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/samples/stdinpub.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/samples/stdinpub.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/samples/stdinpuba.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/samples/stdinpuba.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/samples/stdoutsub.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/samples/stdoutsub.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/samples/stdoutsuba.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/samples/stdoutsuba.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/samples/subasync.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/src/samples/subasync.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

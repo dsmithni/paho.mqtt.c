@@ -3,7 +3,6 @@
 // Title:		LabVIEW MQTT
 // Purpose:		A short description of the interface.
 //
-// Created on:	12/19/2014 at 11:12:59 PM by daniel smith.
 // Copyright:	DS. All Rights Reserved.
 //
 //==============================================================================
@@ -22,40 +21,40 @@
 #include <extcode.h>
 		
 //==============================================================================
-// Constants
-
-//==============================================================================
 // Types
 		
+//structure used to maintain all connection state
 typedef struct {
+	//core client reference
 	MQTTAsync client;
+	//event indicating a subscription was created (event(lvmqtt_subMsg))
 	LVUserEventRef subMsg;
+	//event indicating the system disconnected (event(lvmqtt_statusMsg))
 	LVUserEventRef disconnect;
+	//event indicating a send completed successfully (event(int))
 	LVUserEventRef QoSAck;
+	//event for a connection success (event(lvmqtt_statusMsg))
 	LVUserEventRef connSuccess;
+	//event for a connection failure (event(lvmqtt_statusMsg))
 	LVUserEventRef connFail;
+	//event for a send success (event(int))
 	LVUserEventRef sendS;
+	//event for a send faulure (event(int))
 	LVUserEventRef sendF;
-	LVBoolean connected;
-	MQTTAsync_connectOptions * connectOpts;
 } lvmqtt_context;
 
-#define lvmqtt_context_initializer { NULL, 0, 0, 0, 0, 0, 0, 0, LVFALSE, NULL} 
-
-
+//simple status message sent to labview
 typedef struct {
 	int32 code;
 	LStrHandle data;
 } lvmqtt_statusMsg;
 
+//message from a subscription
 typedef struct {
 	int32 id;
 	LStrHandle Topic;
 	LStrHandle MsgData;
 } lvmqtt_subMsg;
-
-//==============================================================================
-// External variables
 
 //==============================================================================
 // Global functions
@@ -71,12 +70,11 @@ DLLExport LVBoolean LVMQTT_IsConnected(lvmqtt_context * lvctx);
 DLLExport int32 LVMQTT_Publish(lvmqtt_context * lvctx, char * topic, int32 topiclen, char * msgdata, int32 msglen, int qos);
 DLLExport int32 LVMQTT_Subscribe(lvmqtt_context * lvctx, char * topic, int qos);
 
-void LVMQTT_disconnect(void* context, char* cause); 
+void LVMQTT_disconnect(void* context, char* cause);
 int LVMQTT_subMsg(void* context, char* topicName, int topicLen, MQTTAsync_message* message);
 void LVMQTT_QoSAck(void* context, MQTTAsync_token dt);
 void LVMQTT_connSuccess(void* context, MQTTAsync_successData* response);
 void LVMQTT_connFail(void* context,  MQTTAsync_failureData* response);
-int lvmqtt_conn(lvmqtt_context * lvctx);
 void LVMQTTAsync_SendS(void* context, MQTTAsync_successData* response);
 void LVMQTTAsync_SendF(void* context,  MQTTAsync_failureData* response);
 

@@ -1,0 +1,24 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/Users/Daniel/Source/Repos/paho.mqtt.c/LVMQTT/LVMQTT.c 
+
+OBJS += \
+./LVMQTT/LVMQTT.o 
+
+C_DEPS += \
+./LVMQTT/LVMQTT.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+LVMQTT/LVMQTT.o: C:/Users/Daniel/Source/Repos/paho.mqtt.c/LVMQTT/LVMQTT.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross GCC Compiler'
+	x86_64-nilrt-linux-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+
