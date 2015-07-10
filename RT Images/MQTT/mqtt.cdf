@@ -5,11 +5,11 @@
     <TITLE>MQTT Library</TITLE>
     <IMPLEMENTATION>
       <OS VALUE="Linux-ARMv7-A" />
-      <CODEBASE FILENAME="LinuxARMV7A/liblvmqtt.so" TARGET="/usr/lib/liblvmqtt.so" PERMISSIONS="--x--x--x" />
+      <CODEBASE FILENAME="LinuxARMV7A/liblvmqtt.so" TARGET="/usr/lib/liblvmqtt.so" PERMISSIONS="r-xr-xr-x" />
     </IMPLEMENTATION>
     <IMPLEMENTATION>
       <OS VALUE="NI-Linux x64" />
-      <CODEBASE FILENAME="LinuxX64/liblvmqtt.so" TARGET="/usr/lib/liblvmqtt.so" PERMISSIONS="--x--x--x" />
+      <CODEBASE FILENAME="LinuxX64/liblvmqtt.so" TARGET="/usr/lib/liblvmqtt.so" PERMISSIONS="r-xr-xr-x" />
     </IMPLEMENTATION>
   </SOFTPKG>
 </DEFINITION>
