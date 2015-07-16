@@ -20,6 +20,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="defines to add.vi" Type="VI" URL="../defines to add.vi"/>
 		<Item Name="MQTT client.lvclass" Type="LVClass" URL="../MQTT client.lvclass"/>
 		<Item Name="test_API_1.vi" Type="VI" URL="../test_API_1.vi"/>
 		<Item Name="test_API_rt.vi" Type="VI" URL="../test_API_rt.vi"/>
