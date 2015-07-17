@@ -19,9 +19,12 @@
 */
 
 //Creates a new lvmqtt context and a new mqttasync context
-int32 LVMQTT_Create(lvmqtt_context ** lvctx, LVUserEventRef * subMsg, LVUserEventRef * disconnect, 
-					LVUserEventRef * QoSAck, LVUserEventRef * connSuccess, LVUserEventRef * connFail,
-					LVUserEventRef * sendS, LVUserEventRef * sendF, char * serverURI, char * clientID)
+int32 LVMQTT_Create(lvmqtt_context ** lvctx,
+					LVUserEventRef * subMsg, LVUserEventRef * disconnect,
+					LVUserEventRef * QoSAck, LVUserEventRef * connSuccess, 
+					LVUserEventRef * connFail, LVUserEventRef * sendS, 
+					LVUserEventRef * sendF, 
+					char * serverURI, char * clientID)
 {
 	
 	MQTTAsync mqttc;
@@ -60,7 +63,7 @@ int32 LVMQTT_Create(lvmqtt_context ** lvctx, LVUserEventRef * subMsg, LVUserEven
 	lvctxp->client = mqttc;
 
 	//pass core callbacks to mqtt library
-    r = MQTTAsync_setCallbacks(mqttc, lvctxp, LVMQTT_disconnect, LVMQTT_subMsg, LVMQTT_QoSAck);
+    r = MQTTAsync_setCallbacks(mqttc, lvctxp, LVMQTT_disconnected, LVMQTT_subMsg, LVMQTT_QoSAck);
 	
 	//reverse allocations if mqtt library failed
 	if (r!=MQTTASYNC_SUCCESS) {
@@ -118,6 +121,19 @@ int32 LVMQTT_Destroy(lvmqtt_context * lvctx) {
 	return -1;
 }
 
+
+
+int32 LVMQTT_Disconnect(lvmqtt_context * lvctx, int timeout)
+{
+	MQTTAsync_disconnectOptions opts = MQTTAsync_disconnectOptions_initializer;
+	opts.context = lvctx;
+	opts.onFailure = LVMQTT_connFail;
+	opts.onSuccess = LVMQTT_connSuccess;
+	opts.timeout = timeout;
+	return MQTTAsync_disconnect(lvctx->client, &opts);
+}
+
+
 //wrap mqttasync_sendMessage
 int32 LVMQTT_Publish(lvmqtt_context * lvctx, char * topic, int32 topiclen, char * msgdata, int32 msglen, int qos) {
     //unwrap client and allocate send options
@@ -172,7 +188,7 @@ int32 LVMQTT_Subscribe(lvmqtt_context * lvctx, char * topic, int qos) {
 */
 
 //called when the client disconnects
-void LVMQTT_disconnect(void* context, char* cause) {
+void LVMQTT_disconnected(void* context, char* cause) {
 	//context passed in should be our lvctx for this client
 	if (!context) return;
 	lvmqtt_context * ctx = (lvmqtt_context *)context;

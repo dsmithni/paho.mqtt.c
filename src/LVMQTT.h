@@ -66,11 +66,12 @@ DLLExport int32 LVMQTT_Create(lvmqtt_context ** lvctx, LVUserEventRef * subMsg, 
 					LVUserEventRef * sendS, LVUserEventRef * sendF, char * serverURI, char * clientID);
 DLLExport int32 LVMQTT_Destroy(lvmqtt_context * lvctx);
 DLLExport int32 LVMQTT_Connect(lvmqtt_context * lvctx, int timeout, char * uname, char * pass);
+DLLExport int32 LVMQTT_Disconnect(lvmqtt_context * lvctx, int timeout);
 DLLExport LVBoolean LVMQTT_IsConnected(lvmqtt_context * lvctx);
 DLLExport int32 LVMQTT_Publish(lvmqtt_context * lvctx, char * topic, int32 topiclen, char * msgdata, int32 msglen, int qos);
 DLLExport int32 LVMQTT_Subscribe(lvmqtt_context * lvctx, char * topic, int qos);
 
-void LVMQTT_disconnect(void* context, char* cause);
+void LVMQTT_disconnected(void* context, char* cause);
 int LVMQTT_subMsg(void* context, char* topicName, int topicLen, MQTTAsync_message* message);
 void LVMQTT_QoSAck(void* context, MQTTAsync_token dt);
 void LVMQTT_connSuccess(void* context, MQTTAsync_successData* response);
