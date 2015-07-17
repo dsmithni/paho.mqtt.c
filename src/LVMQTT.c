@@ -277,7 +277,7 @@ void LVMQTT_connSuccess(void* context, MQTTAsync_successData* response) {
 		//copy response into statusmsg event
 		lvmqtt_statusMsg msgdata = { 0, NULL };
 		size_t l = 0;
-		if (response->alt.connect.serverURI) {
+		if (response && response->alt.connect.serverURI) {
 			l = strlen(response->alt.connect.serverURI);
 		}
 		msgdata.data = (LStrHandle)DSNewHandle(sizeof(int32) + l);
@@ -285,7 +285,10 @@ void LVMQTT_connSuccess(void* context, MQTTAsync_successData* response) {
 			return;
 		}
 		LStrLen(*msgdata.data) = l;
-		MoveBlock(response->alt.connect.serverURI, LHStrBuf(msgdata.data), l);
+		if (response && response->alt.connect.serverURI) {
+			MoveBlock(response->alt.connect.serverURI, LHStrBuf(msgdata.data), l);
+		}
+		
 
 
 		MgErr r = PostLVUserEvent(csevent, &msgdata);
@@ -302,7 +305,7 @@ void LVMQTT_connFail(void* context, MQTTAsync_failureData* response) {
 		lvmqtt_statusMsg msgdata = { 0, NULL };
 		msgdata.code = response->code;
 		size_t l = 0;
-		if (response->message) {
+		if (response && response->message) {
 			l = strlen(response->message);
 		}
 		msgdata.data = (LStrHandle)DSNewHandle(sizeof(int32) + l);
@@ -310,7 +313,10 @@ void LVMQTT_connFail(void* context, MQTTAsync_failureData* response) {
 			return;
 		}
 		LStrLen(*msgdata.data) = l;
-		MoveBlock(response->message, LHStrBuf(msgdata.data), l);
+		if (response && response->message) {
+			MoveBlock(response->message, LHStrBuf(msgdata.data), l);
+		}
+		
 
 
 		PostLVUserEvent(cfevent, &msgdata);
